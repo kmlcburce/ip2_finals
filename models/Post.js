@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+//adds in scheme (format) when inserting a post
 const PostSchema = mongoose.Schema({
     title: {
         type: String,
@@ -8,14 +9,6 @@ const PostSchema = mongoose.Schema({
     description: {
         type: String,
         required: true
-    },
-    author: {
-        type: String,
-        required: true
-    },
-    date: {
-        type: Date,
-        default: Date.now
     }
 });
 
